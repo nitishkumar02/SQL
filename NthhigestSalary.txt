@@ -73,5 +73,5 @@ select IFNULL((select DISTINCT salary from (SELECT
             salary DESC
     ) as denserank
 FROM
-    Employee)  temp where temp.denserank=2),null) as SecondHighestSalary ;
+    Employee)  temp where temp.denserank=2),null) as SecondHighestSalary from dual;
 
